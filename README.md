@@ -76,3 +76,5 @@ output:
     frequency: 8 Hz
     pin: D8
 ```
+
+[![BMC](https://www.buymeacoffee.com/assets/img/custom_images/white_img.png)](https://www.buymeacoffee.com/3ative)
