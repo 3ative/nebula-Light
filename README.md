@@ -39,11 +39,11 @@ light:
           alpha: 95%
           intensity: 2.5%
       - random:
-          name: Randon
+          name: Random
           transition_length: 2.5s
           update_interval: 3s
       - random:
-          name: Randon Slow
+          name: Random Slow
           transition_length: 10s
           update_interval: 5s
 
