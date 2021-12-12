@@ -13,7 +13,7 @@ esphome:
 
 ## Edit these for either your Wi-Fi SSID & Password - Or your 'secrets' entries ##
 wifi:
-  ssid: !secret ssid 
+  ssid: !secret wifi_ssid 
   password: !secret wifi_password
 
 ## Change this for your light's name ##
