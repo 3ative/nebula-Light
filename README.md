@@ -7,9 +7,9 @@
 
 ### ESPHome Code:
 ___
-- ### [Original](esphome_code_original.yaml)
-#### _**Coming Soon:** 🛠 Updated code for finer control of LASER and Motor_
-- ### [Updated](esphome_code_updated.yaml)
+- ### [Original Code](esphome_code_original.yaml)
+### _Coming Soon: Updated code for finer control of LASER and Motor_
+- ### [Updated Code](esphome_code_updated.yaml)
 
 ___
 #### 💖 Found this useful, want to say '*Thanks*' and support my efforts. *CHEERS*🍺
