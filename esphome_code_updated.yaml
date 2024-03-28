@@ -1,1 +1,1 @@
-# Updated ESPHome Yaml. Replaces two Lights (LASER & MOTOR) with Sliders and adds finer control of Brightness & Speed
+# Updated ESPHome Yaml. Replaces two Lights (LASER & MOTOR) with Sliders and adds finer control of Brightness & Speed using servo component
