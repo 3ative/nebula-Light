@@ -8,7 +8,7 @@
 ### ESPHome Code:
 - ### [Original Code YAML](esphome_code_original.yaml)
 ___
-### _Links to Updated YAML and the explainer Video_
+### _Links to Updated YAML and the explainer tutorial_
 - ### [Updated Code YAML](esphome_code_updated.yaml)
 - ### [Updated Code Video](###) - Will be "Public" Soon
 
