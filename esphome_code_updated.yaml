@@ -39,6 +39,7 @@ light:
           transition_length: 10s
           update_interval: 5s
 
+################### Addtitional Components ####################
 number:
   - platform: template
     name: Nebula ${name} Laser
@@ -86,6 +87,7 @@ servo:
   - id: main_laser
     output: laser_pwm
     max_level: 100%
+###################################################################
 
   - id: main_motor
     output: motor_pwm
@@ -108,5 +110,5 @@ output:
     frequency: 2000 Hz
   - platform: esp8266_pwm
     id: motor_pwm
-    frequency: 8 Hz
+    frequency: 8 Hz ## Change to 8, from 100Hz
     pin: D8
