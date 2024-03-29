@@ -10,7 +10,7 @@
 ___
 ### _Links to Updated YAML and the explainer Video_
 - ### [Updated Code YAML](esphome_code_updated.yaml)
-- ### [Updated Code Video](https://amzn.to/4azvaGm)
+- ### [Updated Code Video](###)
 
 
 ___
