@@ -1,1 +1,112 @@
 # Updated ESPHome Yaml. Replaces two Lights (LASER & MOTOR) with Sliders and adds finer control of Brightness & Speed using servo component
+substitutions:
+  name: lounge
+
+esphome:
+  name: nebula-${name}
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+api:
+ota:
+  
+logger:
+  logs:
+    light: none
+
+light:
+  - platform: rgb
+    name: Nebula ${name} light
+    id: rgb_light
+    red: red
+    green: green
+    blue: blue
+    effects:
+      - flicker:
+          name: Flicker
+          alpha: 95%
+          intensity: 2.5%
+      - random:
+          name: Random
+          transition_length: 2.5s
+          update_interval: 3s
+      - random:
+          name: Random Slow
+          transition_length: 10s
+          update_interval: 5s
+
+number:
+  - platform: template
+    name: Nebula ${name} Laser
+    id: laser_control
+    update_interval: never
+    optimistic: true
+    min_value: 0.0
+    max_value: 100.0
+    initial_value: 0.0
+    step: 1
+    set_action:
+      - if:
+          condition:
+            - lambda: |-
+                return x >=1;
+          then:
+            - servo.write:
+                id: main_laser
+                level: !lambda return (x * 0.01) + random_float()* 0.01;
+          else:
+            - output.turn_off: laser_pwm
+
+  - platform: template
+    name: Nebula ${name} motor
+    id: servo_control
+    update_interval: never
+    optimistic: true
+    min_value: 0.0
+    max_value: 100.0
+    initial_value: 0.0
+    step: 1
+    set_action:
+      - if:
+          condition:
+            - lambda: |-
+                return x >=1;
+          then:
+            - servo.write:
+                id: main_motor
+                level: !lambda return (x * 0.01) + random_float()* 0.01;
+          else:
+            - output.turn_off: motor_pwm
+servo:
+## Set the PWM signal to 100% Duty cycle ##
+  - id: main_laser
+    output: laser_pwm
+    max_level: 100%
+
+  - id: main_motor
+    output: motor_pwm
+    max_level: 100%
+
+output:
+  - platform: esp8266_pwm
+    id: red
+    pin: D1
+  - platform: esp8266_pwm
+    id: green
+    pin: D5
+  - platform: esp8266_pwm
+    id: blue
+    pin: D6
+
+  - platform: esp8266_pwm
+    id: laser_pwm
+    pin: D7
+    frequency: 2000 Hz
+  - platform: esp8266_pwm
+    id: motor_pwm
+    frequency: 8 Hz
+    pin: D8
