@@ -2,14 +2,16 @@
 
 ### Add a D1 Mini to an [LED Galaxy Projector Light](https://amzn.to/4azvaGm) making it fully controllable and Automation-able in *Home Assistant*
 
-## Watch the full video tutorial here: https://youtu.be/YwHWbcuztuY
+### Watch the full video tutorial here: https://youtu.be/YwHWbcuztuY
 
 
 ### ESPHome Code:
+- ### [Original Code YAML](esphome_code_original.yaml)
 ___
-- ### [Original Code](esphome_code_original.yaml)
-### _Coming Soon: Updated code for finer control of LASER and Motor_
-- ### [Updated Code](esphome_code_updated.yaml)
+### _Links to Updated YAML and the explainer Video_
+- ### [Updated Code YAML](esphome_code_updated.yaml)
+- ### [Updated Code Video](https://amzn.to/4azvaGm)
+
 
 ___
 #### 💖 Found this useful, want to say '*Thanks*' and support my efforts. *CHEERS*🍺
