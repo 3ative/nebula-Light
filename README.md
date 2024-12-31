@@ -10,7 +10,7 @@
 ___
 ### _Links to Updated YAML and the explainer tutorial_
 - ### [Updated Code YAML](esphome_code_updated.yaml)
-- ### [Updated Code Video](###) - Will be "Public" Soon
+- ### [Updated Code Video](https://youtu.be/PLIRTxS-Nyo)
 
 
 ___
