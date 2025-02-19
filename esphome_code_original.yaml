@@ -4,7 +4,8 @@ substitutions:
 
 esphome:
   name: ${name}
-  platform: ESP8266
+
+esp8266:
   board: d1_mini
 
 ## Edit these for either your Wi-Fi SSID & Password - Or your 'secrets' entries ##
